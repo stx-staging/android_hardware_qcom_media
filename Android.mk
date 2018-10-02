@@ -14,4 +14,8 @@ endif
 
 include $(QCOM_MEDIA_ROOT)/hypv-intercept/Android.mk
 
+ifeq ($(TARGET_BOARD_AUTO),true)
+include $(QCOM_MEDIA_ROOT)/libsidebandstreamhandle/Android.mk
+endif
+
 endif
